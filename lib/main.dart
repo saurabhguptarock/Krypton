@@ -54,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         left: 20,
                         right: 20),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -85,12 +86,23 @@ class _MyHomePageState extends State<MyHomePage> {
                         Padding(
                           padding: EdgeInsets.only(top: 40),
                         ),
-                        Text(
-                          'Top quality mining systems',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 45,
-                              fontWeight: FontWeight.bold),
+                        FittedBox(
+                          child: Text(
+                            'Top quality',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        FittedBox(
+                          child: Text(
+                            'mining systems',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 45,
+                                fontWeight: FontWeight.bold),
+                          ),
                         )
                       ],
                     ),
@@ -137,10 +149,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(25)),
                                 child: Container(
-                                  height: MediaQuery.of(context).size.width *
-                                      0.35, // TODO: Check for height and width
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.35,
+                                  height: 150,
+                                  width: 150,
                                   decoration: BoxDecoration(
                                     color: Color.fromRGBO(24, 32, 60, 1),
                                     borderRadius: BorderRadius.circular(25),
@@ -193,10 +203,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(25)),
                                 child: Container(
-                                  height: MediaQuery.of(context).size.width *
-                                      0.35, // TODO: Check for height and width
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.35,
+                                  height: 150,
+                                  width: 150,
                                   decoration: BoxDecoration(
                                     color: Color.fromRGBO(24, 32, 60, 1),
                                     borderRadius: BorderRadius.circular(25),
@@ -249,10 +257,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(25)),
                                 child: Container(
-                                  height: MediaQuery.of(context).size.width *
-                                      0.35, // TODO: Check for height and width
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.35,
+                                  height: 150,
+                                  width: 150,
                                   decoration: BoxDecoration(
                                     color: Color.fromRGBO(24, 32, 60, 1),
                                     borderRadius: BorderRadius.circular(25),
@@ -300,7 +306,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.only(top: 40),
+                          padding: EdgeInsets.only(top: 30),
                         ),
                         SizedBox(
                           child: Text(
